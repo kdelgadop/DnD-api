@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+    <title>5e something</title>
+</head>
+<body>
+    <section class="lr-Margin">
+        <h1 class="margin">D&D Monster Manual Monsters</h1>
+        <!-- <input type="range" id="cr" name="challenge-rating" 
+        min="0" max="100" value="90" step="10"> -->
+        <!-- <input type="text" id="cr" placeholder="Enter a Challenge Rating..."> -->
+        <p class="margin">Challenge Rating</p>
+        <select name="challenge-rating" id="cr">
+            <optgroup label="Challenge Rating">
+            <option id="cr" value="0.25">1/4</option>
+            <option id="cr" value="0.50">1/2</option>
+            <option id="cr" value="0">0</option>
+            <option id="cr" value="1">1</option>
+            <option id="cr" value="2">2</option>
+            <option id="cr" value="3">3</option>
+            <option id="cr" value="4">4</option>
+            <option id="cr" value="5">5</option>
+            <option id="cr" value="6">6</option>
+            <option id="cr" value="7">7</option>
+            <option id="cr" value="8">8</option>
+            <option id="cr" value="9">9</option>
+            <option id="cr" value="10">10</option>
+            <option id="cr" value="11">11</option>
+            <option id="cr" value="12">12</option>
+            <option id="cr" value="13">13</option>
+            <option id="cr" value="14">14</option>
+            <option id="cr" value="15">15</option>
+            <option id="cr" value="16">16</option>
+            <option id="cr" value="17">17</option>
+            <option id="cr" value="19">19</option>
+            <option id="cr" value="20">20</option>
+            <option id="cr" value="21">21</option>
+            <option id="cr" value="22">22</option>
+            <option id="cr" value="23">23</option>
+            <option id="cr" value="24">24</option>
+            <option id="cr" value="30">30</option>
+        </select>
+
+        <p class="margin">Actions</p>
+        <label class="switch">
+            <input type="checkbox" value="false" class="actions">
+            <span class="slider round" ></span>
+        </label>
+        <p class="margin">Abilities</p>
+        <label class="switch">
+            <input type="checkbox" value="false" class="abilities">
+            <span class="slider round" ></span>
+        </label>
+        <br>
+        <br>
+        <button onclick="init5e()" id="crrange">Generate Monster List!</button>
+    
+
+        <div id="monster-list" class="margin">
+
+        </div>
+    </section>
+</body>
+
+</html>
